@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link class="favicon" rel="icon" href="./assets/disney_dp-removebg-preview.png" >
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <img src="./assets/WittyVerse_Logo_Slogan.png" alt="Logo"/>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <img src="./assets/WittyVerse_Logo_Slogan.png" alt="Logo"/>
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/disney_dp-removebg-preview.png" alt="Subhashree profile picture" id="profile_img" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Subhashree</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Subhashree_CV_.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="sicon"
+            onclick="window.open('https://www.linkedin.com/in/subhashree-subhalaxmi-sahoo/', '_blank')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="sicon"
+            onclick="window.open('https://github.com/SubhashreeSS', '_blank')"
+          />
+          <img
+            src="./assets/instagram.png"
+            alt="My Instagram profile"
+            class="sicon"
+            id="insta"
+            onclick="window.open('https://www.instagram.com/witty__pixie/', '_blank')"
+          />
+          <img
+            src="./assets/facebook.png"
+            alt="My Facebook profile"
+            class="sicon"
+            onclick="window.open('https://www.facebook.com/subhashree.subhalaxmi.9256', '_blank')"
+          />
+          <img
+            src="./assets/X.png"
+            alt="My X profile"
+            class="sicon"
+            onclick="window.open('https://x.com/sbhshr2', '_blank')"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/dp.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container-education">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>3+ years <br />Software Engineer</p>
+            </div>
+            <div class="details-container-education">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Tech Graduate (YOP: 2021)<br />Computer Science and Engineering</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Frontend Developer with 3+ years of experience, including a year of hands-on expertise in Angular and TypeScript. Skilled in developing responsive, user-friendly web applications using HTML, CSS, SCSS, Angular Material, and JavaScript. Proficient in front-end frameworks, application development, component design, backend integration, UI/UX optimisation, and error handling with minimal supervision. Experienced in working with RESTful APIs, Git, and Jira, along with CMS platforms like WordPress and Wix. Passionate about crafting seamless digital experiences with a strong focus on design using Figma and Canva.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container-experience">
+            <h2 class="experience-sub-title">🖥️ Technical Skills</h2>
+            <div class="article-container">
+              <ul>
+                <li><strong>Web Technologies:</strong> Angular v18, HTML, CSS, Angular Material, Bootstrap</li>
+                <li><strong>Programming Languages:</strong> TypeScript, JavaScript</li>
+                <li><strong>Web Services:</strong> RESTful API</li>
+              </ul>
+            </div>
+          </div>
+          <div class="details-container-experience">
+            <h2 class="experience-sub-title">🛠️ Tools & Platforms</h2>
+            <div class="article-container">
+              <ul>
+                <li><strong>Design & Prototyping:</strong> Figma, Canva</li>
+                <li><strong>Tools & Frameworks:</strong> Git, Jira</li>
+                <li><strong>CMS:</strong> WordPress, Wix</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <h1 class="title">Other Highlights</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container-experience">
+            <h2 class="experience-sub-title">🏅 Certifications</h2>
+            <div class="article-container">
+              <ul>
+                <li><strong class="skill" onclick="window.open('./assets/Angular 15 Certification.pdf')">Angular 15 Certification</strong> <br>Vskills - India's Largest Certification Body</li>
+                <li><strong class="skill" onclick="window.open('./assets/AccioJob Internship Certificate.pdf')">Website clone using React JS</strong><br> AccioJob</li>
+                <!-- <li><strong>Web Services:</strong> RESTful API</li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="details-container-experience">
+            <h2 class="experience-sub-title">🎨 Hobbies / Personal Interests</h2>
+            <div class="article-container">
+              <ul>
+                <li><strong>Art (Digital Portrait | Mandala art | Doodle | DIY)</strong></li>
+                <li><strong>Cooking</strong> </li>
+                <li><strong>Gardening</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+    
+      <div class="slider-container">
+        <button class="slider-btn prev">&#10094;</button>
+    
+        <div class="slider">
+          <div class="project-card">
+            <img src="./assets/Live Weather App.png" alt="Project 1" class="project-img" />
+            <h2 class="experience-sub-title project-title">Live Weather App</h2>
+            <div class="btn-container">
+              <button onclick="window.open('https://github.com/SubhashreeSS/Live-Weather-App', '_blank')" class="btn btn-color-2 project-btn">Github</button>
+              <button onclick="window.open('https://live-weather-app-284.netlify.app/', '_blank')" class="btn btn-color-2 project-btn">Live Demo</button>
+            </div>
+          </div>
+    
+          <div class="project-card">
+            <img src="./assets/Tinder_app.webp" alt="Project 2" class="project-img" />
+            <h2 class="experience-sub-title project-title">Tinder Clone</h2>
+            <div class="btn-container">
+              <button onclick="window.open('https://github.com/SubhashreeSS/Tinder-Clone', '_blank')"class="btn btn-color-2 project-btn">Github</button>
+              <button onclick="window.open('https://tinder-clone-f.netlify.app/', '_blank')"class="btn btn-color-2 project-btn">Live Demo</button>
+            </div>
+          </div>
+    
+          <div class="project-card">
+            <img src="./assets/tic-tac-toe.jpeg" alt="Project 3" class="project-img" />
+            <h2 class="experience-sub-title project-title">Tic-tac-toe Game</h2>
+            <div class="btn-container">
+              <button onclick="window.open('https://github.com/SubhashreeSS/Javascript_Project', '_blank')"class="btn btn-color-2 project-btn">Github</button>
+              <button onclick="window.open('https://tic-tac-toe-game25.netlify.app/', '_blank')"class="btn btn-color-2 project-btn">Live Demo</button>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="./assets/Gallery.png" alt="Project 3" class="project-img" />
+            <h2 class="experience-sub-title project-title">Photography Site</h2>
+            <div class="btn-container">
+              <button onclick="window.open('https://github.com/SubhashreeSS/Tourist_Places_of_Odisha', '_blank')"class="btn btn-color-2 project-btn">Github</button>
+              <button onclick="window.open('https://tourist-places-of-odisha.netlify.app/', '_blank')"class="btn btn-color-2 project-btn">Live Demo</button>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="./assets/Technical_document.png" alt="Project 3" class="project-img" />
+            <h2 class="experience-sub-title project-title">Technical Doc</h2>
+            <div class="btn-container">
+              <button onclick="window.open('https://github.com/SubhashreeSS/Technical_Doc', '_blank')"class="btn btn-color-2 project-btn">Github</button>
+              <button onclick="window.open('https://technical-doc2805.netlify.app/', '_blank')"class="btn btn-color-2 project-btn">Live Demo</button>
+            </div>
+          </div>
+    
+          <!-- Add more projects the same way -->
+        </div>
+    
+        <button class="slider-btn next">&#10095;</button>
+      </div>
+    
+      <div class="pagination-dots" id="pagination"></div>
+      <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#contact'"
+    />
+
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:techshree0@gmail.com">techshree0@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/subhashree-subhalaxmi-sahoo/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <!-- <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav> -->
+      <p>Copyright &#169; 2025 Subhashree. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
